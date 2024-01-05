@@ -14,10 +14,9 @@ def getWords(filename):
         line = line.strip()
         temporaryList.append(line)
 
-allwords = tuple(temporaryList)
-readFile.close
-
-return allwords
+    allwords = tuple(temporaryList)
+    readFile.close
+    return allwords
 
 articles = getWords('articles.txt')
 nouns = getWords('nouns.txt')
