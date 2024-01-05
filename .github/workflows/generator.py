@@ -7,6 +7,23 @@ and vocabulary.  Words are chosen at random.
 
 import random
 
+def getWords(filename):
+    readFile = open(filename,"r")
+    temporaryList = list()
+    for line in readFile:
+        line = line.strip()
+        temporaryList.append(line)
+
+allwords = tuple(temporaryList)
+readFile.close
+
+return allwords
+
+articles = getWords('articles.txt')
+nouns = getWords('nouns.txt')
+verbs = getWords('verbs.txt')
+prepositions = getWords('prepositions.txt')
+
 articles = ("A", "THE")
 
 nouns = ("BOY", "GIRL", "BAT", "BALL")
